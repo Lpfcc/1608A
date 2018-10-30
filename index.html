@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper-4.2.2.min.css">
 </head>
 
 <body>
@@ -21,16 +22,36 @@
                 <li>内衣</li>
             </ul>
         </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/3.png" /></div>
+                <div class="swiper-slide"><img src="./img/2.png" /></div>
+                <div class="swiper-slide"><img src="./img/3.png" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </div>
+
 
 </body>
 <script src="./js/flexible.js"></script>
 <script src="./js/better-scroll.js"></script>
+<script src="./js/swiper-4.1.6.min.js"></script>
 <script>
     var scrolls = document.querySelector('#iscroll');
     var scroll = new BScroll(scrolls, {
         scrollX: true
     });
+    var mySwiper = new Swiper(".swiper-container", {
+        autoplay: true,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination'
+        }
+
+    })
 </script>
 
 </html>

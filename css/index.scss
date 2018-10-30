@@ -27,3 +27,18 @@ html {
         }
     }
 }
+
+.swiper-container {
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            width: 30px;
+            height: 30px;
+            background: black;
+        }
+    }
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
